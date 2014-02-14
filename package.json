@@ -1,0 +1,37 @@
+{
+  "name": "readability-cli",
+  "version": "0.0.1",
+  "description": "Read any web page from the command line using readability.js",
+  "main": "bin/readability",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xdamman/readibility-cli.git"
+  },
+  "bin": {
+    "readability": "bin/readability"
+  },
+  "keywords": [
+    "readibility",
+    "cli",
+    "command",
+    "line",
+    "web",
+    "url",
+    "html"
+  ],
+  "author": "Xavier Damman (@xdamman)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xdamman/readibility-cli/issues"
+  },
+  "homepage": "https://github.com/xdamman/readibility-cli",
+  "dependencies": {
+    "node-readability": "~0.3.2",
+    "cli-color": "~0.2.3",
+    "ent": "~0.1.0",
+    "commander": "~2.1.0"
+  }
+}

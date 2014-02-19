@@ -2,6 +2,8 @@
 
 Read any web page from the command line using readability.js
 
+![](http://recordit.co/Cdjrke/gif)
+
 ## Install
 
     npm install -g readability-cli

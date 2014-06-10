@@ -2,7 +2,7 @@
 
 var program = require('commander')
   , read = require('node-readability')
-  , ent = require('ent')
+  , he = require('he')
   , pkg = require('../package.json')
   , clc = require('cli-color');
 
@@ -27,7 +27,7 @@ if(program.color) {
 var error = function(msg) {
   if(msg) console.log(clc.red("Error: ")+msg);
   console.log();
-  usage(); 
+  usage();
   process.exit(0);
 }
 
@@ -63,12 +63,12 @@ read(url, function(err, article, meta) {
   content = content.replace(/ {2,*}|\t/g,' ');
 
   var content = content.replace(/<\/?[^>]+(>|$)/g, "");
-  content = ent.decode(content);
+  content = he.decode(content);
   console.log(content);
 
   // The raw HTML code of the page
   //console.log(article.html);
   // The document object of the page
   //console.log(article.document);
-  
+
 });

@@ -31,7 +31,7 @@
   "dependencies": {
     "node-readability": "~0.3.2",
     "cli-color": "~0.2.3",
-    "ent": "~0.1.0",
+    "he": "~0.4.1",
     "commander": "~2.1.0"
   }
 }
